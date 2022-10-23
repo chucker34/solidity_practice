@@ -38,7 +38,7 @@ contract("Greeter: update greeting", (accounts) => {
       const expected = "Hi there!";
       await greeter.setGreeting(expected);
       const actual = await greeter.greet();
-      assert.equal(actual, expected, "greeting was not updated.");
+      assert.equal(actual, expected, "greeting updated");
     });
   });
 
